@@ -14,4 +14,4 @@ RUN pip3 install -r requirements.txt
 
 ENV FLASK_APP=main:create_app
 
-CMD [ "gunicorn", "-b", "0.0.0.0:8000", "'main:create_app()'"]
+CMD [ "gunicorn", "-b", "0.0.0.0:8000", "main:create_app()"]
